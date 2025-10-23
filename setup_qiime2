@@ -158,16 +158,6 @@ if __name__ == "__main__":
         else:
             con.log("could not install Empress :sob:")
 
-        con.log(":microscope: Installing PICRUSt2...")
-        rc = run_in_env(
-            "mamba install -c bioconda -c conda-forge picrust2 -y",
-            "qiime2"
-        )
-        if rc.returncode == 0:
-            con.log(":microscope: PICRUSt2 installation complete.")
-        else:
-            con.log("[red]Could not install PICRUSt2 :sob:[/red]")
-
     else:
         con.log(":mag: Qiime 2 is already installed. Skipped.")
         if not qiime_active:
