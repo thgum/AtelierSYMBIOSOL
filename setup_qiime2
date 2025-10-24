@@ -157,6 +157,7 @@ if __name__ == "__main__":
             con.log(":evergreen_tree: Done.")
         else:
             con.log("could not install Empress :sob:")
+
     else:
         con.log(":mag: Qiime 2 is already installed. Skipped.")
         if not qiime_active:
